@@ -3,7 +3,7 @@
 """
 Created on Mon Jan 12 11:29:30 2026
 
-@author: entertainment
+@author: CoraDeFrancesco
 """
 
 # Imports
@@ -114,7 +114,7 @@ ax.set(
     ylabel=fr"$B_\nu (T)$ [{Bv10.unit}]",
 )
 
-plt.xlim(right=12)
+plt.xlim(left=0.01, right=12)
 plt.ylim(top=0.5e-3)
 
 plt.savefig('images/plot_logBv_logv.pdf')

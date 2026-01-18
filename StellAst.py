@@ -3,7 +3,7 @@
 """
 Created on Mon Jan 12 11:30:37 2026
 
-@author: entertainment
+@author: CoraDeFrancesco
 """
 
 # Stellar Astro module
