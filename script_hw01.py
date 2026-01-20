@@ -9,6 +9,7 @@ Created on Mon Jan 12 11:29:30 2026
 # Imports
 import numpy as np
 import matplotlib.pyplot as plt
+from matplotlib import style
 from astropy import units as u
 from astropy import constants as const
 
@@ -57,7 +58,7 @@ Bv10 = bb10(wavenums.to(u.Hz, equivalencies=u.spectral()))
 Bv7 = bb7(wavenums.to(u.Hz, equivalencies=u.spectral()))
 Bv3 = bb3(wavenums.to(u.Hz, equivalencies=u.spectral()))
 
-plt.style.use(['classic', 'seaborn-notebook'])
+plt.style.use(['classic', 'seaborn-v0_8-notebook'])
 
 # Bv vs wavenum
 fig, ax = plt.subplots(dpi=200)
@@ -94,7 +95,7 @@ ax.set(
 
 plt.ylim(bottom=1e-8, top=0.5e-3)
 
-plt.legend(loc='top right')
+plt.legend(loc='upper right')
 
 plt.savefig('images/plot_logBv_v.pdf')
 
