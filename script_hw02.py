@@ -331,7 +331,7 @@ ax.set_ylabel(r"Convergence ($\Delta y$)")
 ax.set_xlim(1e-1, 50)
 ax.set_xscale('log')
 
-#plt.savefig('images/plot_conv_xmin.pdf')
+#plt.savefig('images/plot_conv_xmax.pdf')
 
 plt.show()
 
